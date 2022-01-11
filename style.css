@@ -10,8 +10,9 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-rose: #ac2c53;
+  --color-orange: #ffa32a;
   --color-yellow: #ffe449;
-  --color-orange: #ffa733;
+  --color-skyblue: #8bb5dd;
   --color-black: #000000;
 
   /* Font size */
@@ -167,8 +168,12 @@ p {
 .section {
   padding: 50px;
   text-align: center;
-  max-width: 1200px;
   margin: auto;
+}
+
+.section__container {
+  max-width: 1200px;
+  /* margin: auto; */
 }
 
 /* About */
@@ -234,4 +239,61 @@ p {
 
 .school__period {
   font-size: var(--font-micro);
+}
+
+/* Skill */
+
+#skills {
+  background-color: var(--color-skyblue);
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+
+.skillset__title {
+  color: var(--color-white);
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill {
+  margin-bottom: 25px;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill__value {
+  height: 3px;
+  background-color: var(--color-orange);
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  margin: 0;
+  background-color: var(--color-grey);
+}
+
+.tools,
+.etc {
+  padding: 20px;
 }
