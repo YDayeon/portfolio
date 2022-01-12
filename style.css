@@ -111,7 +111,7 @@ p {
   background-color: var(--color-blue);
   align-items: center;
   color: var(--color-white);
-  padding: 16px;
+  padding-left: 16px;
 }
 
 .navbar__logo {
@@ -143,7 +143,7 @@ p {
   right: 32px;
   font-size: 24px;
   color: var(--color-white);
-  top: 24px;
+  top: 12px;
   display: none;
 }
 
@@ -483,6 +483,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    padding: 6px;
   }
 
   .navbar__menu {
