@@ -106,12 +106,19 @@ p {
 
 /* Navvar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-blue);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding-left: 16px;
+  transition: all var(--animation-duration) ease-in;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-dark-blue);
 }
 
 .navbar__logo {
@@ -151,6 +158,7 @@ p {
 #home {
   background: url('imgs/home-background.png') center/cover no-repeat;
   padding: 40px;
+  padding-top: 80px;
   text-align: center;
 }
 
