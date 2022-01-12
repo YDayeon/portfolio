@@ -1,245 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DY's Portfolio</title>
-    <meta name="description" content="Portfolio for beginner Emily" />
-    <meta name="author" content="Emily" />
-    <link rel="icon" type="image/png" href="imgs/favicon.png" />
-    <script
-      src="https://kit.fontawesome.com/428536ac30.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <img class="logo" src="imgs/favicon.png" />
-        <a href="#">DY</a>
-      </div>
-      <div class="navbar__menu">
-        <ul class="navbar__menu">
-          <li class="navbar__menu__item active">Home</li>
-          <li class="navbar__menu__item">About me</li>
-          <li class="navbar__menu__item">Skills</li>
-          <li class="navbar__menu__item">Work</li>
-          <li class="navbar__menu__item">Testimonials</li>
-          <li class="navbar__menu__item">Contact</li>
-        </ul>
-      </div>
-    </nav>
 
-    <!-- Home -->
-    <section id="home">
-      <img src="imgs/profile.png" alt="DY's photo" class="home__avatar" />
-      <h1 class="home__title">
-        I'm Dayeon Yoon<br />
-        Frontend Developer
-      </h1>
-      <h2 class="home__description">Preparing to be a JUNIOR DEVELOPER</h2>
-      <button class="home__contact">contact me</button>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DY's Portfolio</title>
+  <meta name="description" content="Portfolio for beginner Emily" />
+  <meta name="author" content="Emily" />
+  <link rel="icon" type="image/png" href="imgs/favcon.png" />
+  <script src="https://kit.fontawesome.com/428536ac30.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
 
-    <!-- About -->
-    <section id="about" class="section section__container">
-      <h1>About me</h1>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <img class="logo" src="imgs/favcon.png" />
+      <a href="#">DY</a>
+    </div>
+    <div class="navbar__menu">
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active">Home</li>
+        <li class="navbar__menu__item">About me</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">Work</li>
+        <li class="navbar__menu__item">Testimonials</li>
+        <li class="navbar__menu__item">Contact</li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <img src="imgs/profile.png" alt="DY's photo" class="home__avatar" />
+    <h1 class="home__title">
+      I'm Dayeon Yoon<br />
+      Frontend Developer
+    </h1>
+    <h2 class="home__description">Preparing to be a JUNIOR DEVELOPER</h2>
+    <button class="home__contact">contact me</button>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section section__container">
+    <h1>About me</h1>
+    <p>
+      Hi, I'm a passionate Frontend Developer from Incheon, South Korea.<br />
+      I can work with html, CSS, JavaScript(ES6), JAVA and now studying
+      React.<br /> I like to make community to share ideas.
+    </p>
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h2 class="major__title">Front-end</h2>
+        <p class="major__description">html, css, javascript</p>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h2 class="major__title">Back-end</h2>
+        <p class="major__description">jQuery, mySQL</p>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-java"></i>
+        </div>
+        <h2 class="major__title">JAVA</h2>
+        <p class="major__description">studying how to make algorithm</p>
+      </div>
+    </div>
+    <div class="about__schools">
+      <div class="school">
+        <img src="imgs/jobs/univ.png" alt="university" class="school__logo" />
+        <div class="school__description">
+          <p class="school__name">NAMSEOUL UNIVERSITY</p>
+          <p class="school__period">2017 Mar - 2022 Feb</p>
+        </div>
+      </div>
+      <div class="school">
+        <img src="imgs/jobs/ksa.png" alt="KSA" class="school__logo" />
+        <div class="school__description">
+          <p class="school__name">KOREAN STANDARDS ASSOCIATION</p>
+          <p class="school__period"></p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Skiils -->
+  <section id="skills" class="section">
+    <div class="section__container">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
       <p>
-        Hi, I'm a passionate Frontend Developer from Incheon, South Korea.<br />
-        I can work with html, CSS, JavaScript(ES6), JAVA and now studying
-        React.<br/ > I like to make community to share ideas.
+        Experience with all phases of the software life-sycle. Passion for
+        learning new technologies.<br />
+        Capable of working within a team environment and independently. Ability
+        to plan and time schedule,<br />
+        work under strict time pressure quickly when needed.
       </p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fas fa-laptop-code"></i>
-          </div>
-          <h2 class="major__title">Front-end</h2>
-          <p class="major__description">html, css, javascript</p>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fas fa-laptop-code"></i>
-          </div>
-          <h2 class="major__title">Back-end</h2>
-          <p class="major__description">jQuery, mySQL</p>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-java"></i>
-          </div>
-          <h2 class="major__title">JAVA</h2>
-          <p class="major__description">studying how to make algorithm</p>
-        </div>
-      </div>
-      <div class="about__schools">
-        <div class="school">
-          <img 
-          src="imgs/jobs/univ.png" 
-          alt="university" 
-          class="school__logo" 
-          />
-          <div class="school__description">
-            <p class="school__name">NAMSEOUL UNIVERSITY</p>
-            <p class="school__period">2017 Mar - 2022 Feb</p>
-          </div>
-        </div>
-        <div class="school">
-          <img 
-          src="imgs/jobs/ksa.png" 
-          alt="KSA" 
-          class="school__logo" 
-          />
-          <div class="school__description">
-            <p class="school__name">KOREAN STANDARDS ASSOCIATION</p>
-            <p class="school__period"></p>
-          </div> 
-        </div>
-    </section>
-
-    <!-- Skiils -->
-    <section id="skills" class="section">
-      <div class="section__container">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-          Experience with all phases of the software life-sycle. Passion for
-          learning new technologies.<br />
-          Capable of working within a team environment and independently. Ability
-          to plan and time schedule,<br />
-          work under strict time pressure quickly when needed.
-        </p>
-        <div class="skillset">
-          <div class="skillset__left">
-            <h3 class="skillset__title">Skills</h3>
-            <div class="skill">
-              <div class="skill__description">
-                <span>HTML</span>
-                <span>80%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width:80%"></div>
-              </div>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>80%</span>
             </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>CSS</span>
-                <span>70%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width:70%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>JavaScript</span>
-                <span>60%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width:60%"></div>
-              </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:80%"></div>
             </div>
           </div>
-          <div class="skillset__right">
-            <div class="tools">
-              <h3 class="skillset__title">Tools</h3>
-              <ul class="tools__list">
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Eclipse</span></li>
-              </ul>
+          <div class="skill">
+            <div class="skill__description">
+              <span>CSS</span>
+              <span>70%</span>
             </div>
-            <div class="etc">
-              <h3 class="skillset__title">Etc</h3>
-              <ul class="etc__list">
-                <li><span>Github</span></li>
-              </ul>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:70%"></div>
             </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>JavaScript</span>
+              <span>60%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:60%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Eclipse</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Github</span></li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Work -->
-    <section id="work" class="section">
-      <h1>My Work</h1>
-      <h3>Projects</h3>
-      <div class="work__categories">
-        <button class="category__btn">
-          All<span class="category__count">5</span>
-        </button>
-        <button class="category__btn">
-          Front-end<span class="category__count">4</span>
-        </button>
-        <button class="category__btn">
-          Back-end<span class="category__count">1</span>
-        </button>
-      </div>
+  <!-- Work -->
+  <section id="work" class="section">
+    <h1>My Work</h1>
+    <h3>Projects</h3>
+    <div class="work__categories">
+      <button class="category__btn">
+        All<span class="category__count">5</span>
+      </button>
+      <button class="category__btn">
+        Front-end<span class="category__count">4</span>
+      </button>
+      <button class="category__btn">
+        Back-end<span class="category__count">1</span>
+      </button>
+    </div>
 
-      <div class="work__projects">
-        <a href="https://www.naver.com/" class="project" target="blank">
-          <img class="project__img" src="imgs/projects/login.png" alt="" />
-          <div class="project__description">
-            <h3>MES login page</h3>
-            <span>MES with HTML, CSS, JavaScript, jQuery and mySQL</span>
-          </div>
-        </a>
-      </div>
-    </section>
+    <div class="work__projects">
+      <a href="https://www.naver.com/" class="project" target="blank">
+        <img class="project__img" src="imgs/projects/login.png" alt="" />
+        <div class="project__description">
+          <h3>MES login page</h3>
+          <span>MES with HTML, CSS, JavaScript, jQuery and mySQL</span>
+        </div>
+      </a>
+    </div>
+  </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <div class="section__container">
       <h1>Testimonials</h1>
       <h3>See what they say about me</h3>
       <div class="testimonials">
         <div class="testimonial">
-          <img
-            src="imgs/testimonial/people1.jpg"
-            alt="People"
-            class="testimonial__avatar"
-          />
+          <img src="imgs/testimonial/people1.jpg" alt="People" class="testimonial__avatar" />
           <div class="testimonial__speech-bubble">
-            <p>Emily is a good person Lorem ipsum dolor sit amet consectetur, 
-              adipisicing elit. Qui voluptates tempore sed sapiente recusandae 
-              unde cum ipsam autem, corporis accusantium perspiciatis perferendis 
+            <p>Emily is a good person Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Qui voluptates tempore sed sapiente recusandae
+              unde cum ipsam autem, corporis accusantium perspiciatis perferendis
               dicta consectetur dolore rem, quia laudantium quasi dignissimos!</p>
             <p class="name"><a href="">Daniela</a> / Google</p>
           </div>
         </div>
         <div class="testimonial">
           <div class="testimonial__speech-bubble">
-            <p>Emily is a good person Lorem ipsum dolor sit amet consectetur, 
-              adipisicing elit. Qui voluptates tempore sed sapiente recusandae 
-              unde cum ipsam autem, corporis accusantium perspiciatis perferendis 
+            <p>Emily is a good person Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Qui voluptates tempore sed sapiente recusandae
+              unde cum ipsam autem, corporis accusantium perspiciatis perferendis
               dicta consectetur dolore rem, quia laudantium quasi dignissimos!</p>
             <p class="name"><a href="">Daniela</a> / Google</p>
           </div>
-          <img
-            src="imgs/testimonial/people1.jpg"
-            alt="People"
-            class="testimonial__avatar"
-          />
+          <img src="imgs/testimonial/people1.jpg" alt="People" class="testimonial__avatar" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h1 class="contact__title">Get in touch</h1>
-      <h2 class="contact__email">yday1223@gmail.com</h2>
-      <div class="contact__links">
-        <a href="" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <p class="contact__rights">Designde by Dayeon Yoon</p>
-    </section>
-  </body>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h1 class="contact__title">Get in touch</h1>
+    <h2 class="contact__email">yday1223@gmail.com</h2>
+    <div class="contact__links">
+      <a href="" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <p class="contact__rights">Designde by Dayeon Yoon</p>
+  </section>
+</body>
+
 </html>
