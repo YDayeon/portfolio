@@ -28,29 +28,14 @@ contactme.addEventListener('click', (event) => {
   scrollIntoView('#contact');
 });
 
+// Make home slowly fade to transparent as the window scroll down
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
 }
-
-// const home = document.querySelector('#home');
-// const about = document.querySelector('#about');
-// const skills = document.querySelector('#skills');
-// const work = document.querySelector('#work');
-// const testimonials = document.querySelector('#testimonials');
-// const contact = document.querySelector('#contact');
-
-// const topHome = home.offsetTop;
-// const topAbout = about.offsetTop;
-// const topSkills = skills.offsetTop;
-// const topWork = work.offsetTop;
-// const topTestimonials = testimonials.offsetTop;
-// const topContact = contact.offsetTop;
-
-// function autoscroll() {
-//   window.scroll({
-//     top: topContact,
-//     left: 0,
-//     behavior: 'smooth',
-//   });
-// }
