@@ -487,6 +487,18 @@ p {
   transform: scale(1.1);
   color: var(--color-orange);
 }
+/* Scroll */
+.arrow-up {
+  background: url('imgs/uparrow.png') var(--color-yellow) center/cover no-repeat;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: all var(--animation-duration) ease-in;
+  visibility: hidden;
+}
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
