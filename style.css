@@ -136,14 +136,15 @@ p {
   margin: 0 4px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
-}
-
-.navbar__menu__item.active {
-  border: 1px solid var(--color-white);
+  border: 1px solid transparent;
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-blue);
+}
+
+.navbar__menu__item.selected {
+  border-color: var(--color-white);
 }
 
 .navbar__toggle-btn {
@@ -333,13 +334,13 @@ p {
   padding: 8px 48px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-blue);
   color: var(--color-white);
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
@@ -370,7 +371,7 @@ p {
 }
 
 .work__projects.anim-out {
-  opacity: 0.6;
+  opacity: 0;
   transform: scale(0.96) translateY(40px);
 }
 
