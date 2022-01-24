@@ -64,6 +64,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  padding: 0;
 }
 
 /* Typography */
@@ -161,20 +162,45 @@ p {
   background: url('imgs/home-background.png') center/cover no-repeat;
   padding: 30px;
   padding-top: 50px;
-  text-align: center;
+  height: 500px;
+}
+
+.home__arrow {
+  position: absolute;
+  width: 330px;
+  left: 650px;
+  top: 40px;
 }
 
 .home__avatar {
-  width: 200px;
-  height: 270px;
+  position: absolute;
+  top: 160px;
+  right: 120px;
+  width: 250px;
+  height: 340px;
 }
 
 .home__title,
 .home__description {
   color: var(--color-white);
+  position: absolute;
+}
+
+.home__title {
+  margin-top: 80px;
+  left: 100px;
+  font-size: 60px;
+}
+
+.home__description {
+  left: 100px;
+  top: 300px;
 }
 
 .home__contact {
+  position: absolute;
+  left: 280px;
+  top: 385px;
   color: var(--color-white);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
