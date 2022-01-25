@@ -4,8 +4,9 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
+  --color-light-blue: #bbf1f3;
   --color-blue: #456edd;
-  --color-dark-blue: #3c5894;
+  --color-dark-blue: #313c52;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
@@ -175,7 +176,7 @@ p {
 .home__avatar {
   position: absolute;
   top: 160px;
-  right: 120px;
+  left: 900px;
   width: 250px;
   height: 340px;
 }
@@ -211,7 +212,8 @@ p {
 }
 
 .home__contact:hover {
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-light-blue);
+  color: var(--color-black);
 }
 
 /* Section common */
@@ -542,6 +544,7 @@ p {
 @media screen and (max-width: 768px) {
   :root {
     /* Font size */
+    --font-ex-large: 38px;
     --font-large: 30px;
     --font-medium: 18px;
     --font-regular: 16px;
@@ -577,6 +580,36 @@ p {
   .section {
     padding: 16px;
     padding-top: 40px;
+  }
+
+  /* Home */
+  .home__arrow {
+    display: none;
+  }
+
+  .home__title {
+    font-size: var(--font-ex-large);
+    top: 0px;
+    left: 20px;
+  }
+
+  .home__description {
+    font-size: var(--font-large);
+    top: 190px;
+    left: 20px;
+    color: var(--color-light-blue);
+  }
+
+  .home__avatar {
+    top: 220px;
+    left: 200px;
+    width: 210px;
+    height: 280px;
+  }
+
+  .home__contact {
+    top: 290px;
+    left: 15px;
   }
 
   .about__majors {
