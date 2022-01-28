@@ -39,6 +39,19 @@ contactme.addEventListener('click', (event) => {
   scrollIntoView('#contact');
 });
 
+// Mouse Hover name to change the text
+// Mouse Hover name : Emily
+const kName = document.querySelector('#kName');
+const eName = document.querySelector('.eName');
+kName.addEventListener('mouseover', () => {
+  kName.style.display = 'none';
+  eName.classList.add('show');
+});
+eName.addEventListener('mouseout', () => {
+  kName.style.display = 'inline-block';
+  eName.classList.remove('show');
+});
+
 // Make home slowly fade to transparent as the window scroll down
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;

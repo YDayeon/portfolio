@@ -4,8 +4,9 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-light-blue: #bbf1f3;
+  --color-light-blue: #80e9fc;
   --color-blue: #456edd;
+  --color-background: #242c3f;
   --color-dark-blue: #313c52;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -14,10 +15,12 @@
   --color-orange: #ffa32a;
   --color-yellow: #ffe449;
   --color-skyblue: #8bb5dd;
-  --color-pink: #e9789a;
+  --color-red: #ff836d;
+  --color-light-pink: #ffcdc1;
   --color-black: #000000;
 
   /* Font size */
+  --font-x-large: 55px;
   --font-large: 48px;
   --font-medium: 28px;
   --font-regular: 18px;
@@ -160,17 +163,25 @@ p {
 
 /* Home */
 #home {
-  background: url('imgs/home-background.png') center/cover no-repeat;
+  background-color: var(--color-background);
   padding: 30px;
   padding-top: 50px;
   height: 500px;
 }
 
-.home__arrow {
-  position: absolute;
-  width: 330px;
-  left: 650px;
-  top: 40px;
+.shadow {
+  color: var(--color-red);
+  text-shadow: 2px 2px var(--color-light-pink);
+}
+
+.eName {
+  display: none;
+}
+
+.show {
+  display: inline-flex;
+  color: var(--color-light-blue);
+  text-shadow: 2px 2px var(--color-blue);
 }
 
 .home__avatar {
@@ -181,39 +192,47 @@ p {
   height: 340px;
 }
 
+.home__arrow {
+  position: absolute;
+  width: 330px;
+  left: 650px;
+  top: 40px;
+}
+
+.home__container {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
 .home__title,
 .home__description {
   color: var(--color-white);
-  position: absolute;
 }
 
 .home__title {
-  margin-top: 80px;
-  left: 100px;
-  font-size: 60px;
+  font-size: var(--font-x-large);
 }
 
 .home__description {
-  left: 100px;
-  top: 300px;
+  font-size: var(--font-large);
 }
 
 .home__contact {
-  position: absolute;
-  left: 280px;
-  top: 385px;
-  color: var(--color-white);
+  color: var(--color-red);
+  text-shadow: 1px 1px 1px var(--color-rose);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
-  margin: 10px;
+  margin-top: 55px;
   padding: 8px 12px;
-  border: 2px solid white;
+  border: 2px solid var(--color-light-pink);
   border-radius: var(--size-border-radius);
 }
 
 .home__contact:hover {
-  background-color: var(--color-light-blue);
-  color: var(--color-black);
+  border: 2px solid var(--color-white);
+  text-shadow: 1px 1px 1px var(--color-blue);
+  color: var(--color-light-blue);
 }
 
 /* Section common */
