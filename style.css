@@ -4,6 +4,7 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
+  --color-bright-blue: #bdf5ff;
   --color-light-blue: #80e9fc;
   --color-blue: #456edd;
   --color-background: #242c3f;
@@ -166,9 +167,10 @@ p {
   background-color: var(--color-background);
   padding: 30px;
   padding-top: 50px;
-  height: 500px;
+  height: 550px;
 }
 
+/* Name hover */
 .shadow {
   color: var(--color-red);
   text-shadow: 2px 2px var(--color-light-pink);
@@ -184,24 +186,20 @@ p {
   text-shadow: 2px 2px var(--color-blue);
 }
 
+/* my picture */
 .home__avatar {
   position: absolute;
   top: 160px;
   left: 900px;
   width: 250px;
   height: 340px;
+  border: 2px dashed var(--color-light-pink);
 }
 
-.home__arrow {
-  position: absolute;
-  width: 330px;
-  left: 650px;
-  top: 40px;
-}
-
+/* left side */
 .home__container {
   position: absolute;
-  top: 80px;
+  top: 100px;
   left: 80px;
 }
 
@@ -230,9 +228,10 @@ p {
 }
 
 .home__contact:hover {
-  border: 2px solid var(--color-white);
+  border: 2px solid var(--color-bright-blue);
   text-shadow: 1px 1px 1px var(--color-blue);
   color: var(--color-light-blue);
+  transform: scale(1.03);
 }
 
 /* Section common */
