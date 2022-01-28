@@ -7,7 +7,6 @@
   --color-bright-blue: #bdf5ff;
   --color-light-blue: #80e9fc;
   --color-blue: #456edd;
-  --color-background: #242c3f;
   --color-dark-blue: #313c52;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -19,12 +18,13 @@
   --color-red: #ff836d;
   --color-light-pink: #ffcdc1;
   --color-black: #000000;
+  --color-about: #7ad5ff3a;
 
   /* Font size */
   --font-x-large: 55px;
   --font-large: 48px;
   --font-medium: 28px;
-  --font-regular: 18px;
+  --font-regular: 22px;
   --font-small: 16px;
   --font-micro: 14px;
 
@@ -46,6 +46,7 @@
 }
 
 body {
+  background-color: var(--color-black);
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   cursor: default;
@@ -77,28 +78,28 @@ button {
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-  color: var(--color-black);
+  color: var(--color-white);
   margin: 16px 0px;
 }
 
 h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  color: var(--color-black);
+  color: var(--color-dark-white);
   margin: 8px 0;
 }
 
 h3 {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-black);
+  color: var(--color-light-white);
   margin: 8px 0;
 }
 
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-black);
+  color: var(--color-white);
   margin: 4px 0;
 }
 .logo {
@@ -164,7 +165,11 @@ p {
 
 /* Home */
 #home {
-  background-color: var(--color-background);
+  background: linear-gradient(
+    to bottom right,
+    var(--color-black),
+    var(--color-dark-blue)
+  );
   padding: 30px;
   padding-top: 50px;
   height: 550px;
@@ -186,21 +191,11 @@ p {
   text-shadow: 2px 2px var(--color-blue);
 }
 
-/* my picture */
-.home__avatar {
-  position: absolute;
-  top: 160px;
-  left: 900px;
-  width: 250px;
-  height: 340px;
-  border: 2px dashed var(--color-light-pink);
-}
-
 /* left side */
 .home__container {
   position: absolute;
   top: 100px;
-  left: 80px;
+  left: 200px;
 }
 
 .home__title,
@@ -237,16 +232,44 @@ p {
 /* Section common */
 .section {
   padding: 50px;
-  text-align: center;
+  /* text-align: center; */
   margin: auto;
 }
 
-.section__container {
-  max-width: 1200px;
-  /* margin: auto; */
+/* About */
+
+.about__container {
+  display: flex;
+  flex-direction: row;
 }
 
-/* About */
+.about__avatar {
+  margin: 30px 80px;
+  width: 250px;
+  height: 340px;
+  border: 2px dashed var(--color-bright-blue);
+}
+.face {
+  width: 100%;
+  height: 100%;
+}
+
+.about__description {
+  margin: 20px 100px;
+  width: 570px;
+  line-height: 200%;
+  padding: 20px;
+  padding-bottom: 0px;
+  background-color: var(--color-about);
+}
+
+.about__description-end {
+  font-size: var(--font-small);
+  color: var(--color-dark-white);
+  float: right;
+}
+
+/* 
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -309,12 +332,11 @@ p {
 
 .school__period {
   font-size: var(--font-micro);
-}
+} */
 
 /* Skill */
-
 #skills {
-  background-color: var(--color-skyblue);
+  background-color: var(--color-dark-blue);
 }
 
 .skillset {
@@ -601,9 +623,12 @@ p {
   }
 
   /* Home */
+  #home {
+    height: 450px;
+  }
   .home__container {
-    top: 60px;
-    left: 30px;
+    top: 100px;
+    left: 50px;
   }
   .home__title {
     font-size: var(--font-ex-large);
@@ -613,11 +638,25 @@ p {
     font-size: var(--font-large);
   }
 
-  .home__avatar {
-    top: 270px;
-    left: 200px;
+  .about__container {
+    display: block;
+  }
+
+  .about__avatar {
+    align-items: center;
     width: 180px;
     height: 250px;
+  }
+
+  .face {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about__description {
+    width: 90%;
+    margin: 10px 5%;
+    padding: 5px;
   }
 
   .home__contact {

@@ -38,7 +38,6 @@
 
   <!-- Home -->
   <section id="home">
-    <img src="imgs/profile.png" alt="DY's photo" class="home__avatar" />
     <div class="home__container">
       <h1 class="home__title">
         <span class="shadow">G</span>
@@ -53,14 +52,25 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="section section__container">
+  <section id="about" class="section">
     <h1>About me</h1>
-    <p>
-      Hi, I'm a passionate Frontend Developer from Incheon, South Korea.<br />
-      I can work with html, CSS, JavaScript(ES6), JAVA and now studying
-      React.<br /> I like to make community to share ideas.
-    </p>
-    <div class="about__majors">
+    <div class="about__container">
+      <div class="about__avatar">
+        <img src="imgs/profile.png" alt="DY's photo" class="face" />
+      </div>
+      <div class="about__description">
+        <p>
+          Hello, My name is Dayeon, but you can also call me Emily:)
+          I'm growing Front-end Developer. <br>I always try to do my best with any kinds of work.
+          Especially, when I develope something, first I make my code, next search better
+          way to build code, and fix my code. I'm not tired of repeating this process.
+          <br>I feel pleasure when my code is getting short and fast.
+          <br><span class="about__description-end">as a Developer</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- <div class="about__majors">
       <div class="major">
         <div class="major__icon">
           <i class="fas fa-laptop-code"></i>
@@ -82,7 +92,7 @@
         <h2 class="major__title">JAVA</h2>
         <p class="major__description">studying how to make algorithm</p>
       </div>
-    </div>
+    </div> -->
     <!-- <div class="about__schools">
       <div class="school">
         <img src="imgs/jobs/univ.png" alt="university" class="school__logo" />
@@ -102,61 +112,59 @@
 
   <!-- Skiils -->
   <section id="skills" class="section">
-    <div class="section__container">
-      <h1>Skills</h1>
-      <h2>Skills & Attributes</h2>
-      <p>
-        Experience with all phases of the software life-sycle. Passion for
-        learning new technologies.<br />
-        Capable of working within a team environment and independently. Ability
-        to plan and time schedule,<br />
-        work under strict time pressure quickly when needed.
-      </p>
-      <div class="skillset">
-        <div class="skillset__left">
-          <h3 class="skillset__title">Skills</h3>
-          <div class="skill">
-            <div class="skill__description">
-              <span>HTML</span>
-              <span>80%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width:80%"></div>
-            </div>
+    <h1>Skills</h1>
+    <h2>Skills & Attributes</h2>
+    <p>
+      Experience with all phases of the software life-sycle. Passion for
+      learning new technologies.<br />
+      Capable of working within a team environment and independently. Ability
+      to plan and time schedule,<br />
+      work under strict time pressure quickly when needed.
+    </p>
+    <div class="skillset">
+      <div class="skillset__left">
+        <h3 class="skillset__title">Skills</h3>
+        <div class="skill">
+          <div class="skill__description">
+            <span>HTML</span>
+            <span>80%</span>
           </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>CSS</span>
-              <span>70%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width:70%"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>JavaScript</span>
-              <span>60%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width:60%"></div>
-            </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width:80%"></div>
           </div>
         </div>
-        <div class="skillset__right">
-          <div class="tools">
-            <h3 class="skillset__title">Tools</h3>
-            <ul class="tools__list">
-              <li><span>Visual Studio Code</span></li>
-              <li><span>Eclipse</span></li>
-            </ul>
+        <div class="skill">
+          <div class="skill__description">
+            <span>CSS</span>
+            <span>70%</span>
           </div>
-          <div class="etc">
-            <h3 class="skillset__title">Etc</h3>
-            <ul class="etc__list">
-              <li><span>Github</span></li>
-            </ul>
+          <div class="skill__bar">
+            <div class="skill__value" style="width:70%"></div>
           </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>JavaScript</span>
+            <span>60%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width:60%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skillset__right">
+        <div class="tools">
+          <h3 class="skillset__title">Tools</h3>
+          <ul class="tools__list">
+            <li><span>Visual Studio Code</span></li>
+            <li><span>Eclipse</span></li>
+          </ul>
+        </div>
+        <div class="etc">
+          <h3 class="skillset__title">Etc</h3>
+          <ul class="etc__list">
+            <li><span>Github</span></li>
+          </ul>
         </div>
       </div>
     </div>
