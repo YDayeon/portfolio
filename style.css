@@ -601,33 +601,27 @@ p {
   }
 
   /* Home */
-  .home__arrow {
-    display: none;
+  .home__container {
+    top: 60px;
+    left: 30px;
   }
-
   .home__title {
     font-size: var(--font-ex-large);
-    top: 0px;
-    left: 20px;
   }
 
   .home__description {
     font-size: var(--font-large);
-    top: 190px;
-    left: 20px;
-    color: var(--color-light-blue);
   }
 
   .home__avatar {
-    top: 220px;
+    top: 270px;
     left: 200px;
-    width: 210px;
-    height: 280px;
+    width: 180px;
+    height: 250px;
   }
 
   .home__contact {
-    top: 290px;
-    left: 15px;
+    margin-top: 20px;
   }
 
   .about__majors {
