@@ -241,7 +241,7 @@ p {
 /* About */
 #about {
   background: linear-gradient(
-    to top left,
+    to top right,
     var(--color-black),
     var(--color-dark-blue)
   );
@@ -355,7 +355,11 @@ p {
 
 /* Skill */
 #skills {
-  background-color: var(--color-dark-blue);
+  background: linear-gradient(
+    to bottom right,
+    var(--color-black),
+    var(--color-dark-blue)
+  );
 }
 
 .skillset {
@@ -645,10 +649,12 @@ p {
   #home {
     height: 450px;
   }
+
   .home__container {
     top: 100px;
     left: 50px;
   }
+
   .home__title {
     font-size: var(--font-ex-large);
   }
@@ -657,32 +663,56 @@ p {
     font-size: var(--font-large);
   }
 
-  .about__container {
-    display: block;
-  }
-
-  .about__avatar {
-    align-items: center;
-    width: 180px;
-    height: 250px;
-  }
-
   .face {
     width: 100%;
     height: 100%;
-  }
-
-  .about__description {
-    width: 90%;
-    margin: 10px 5%;
-    padding: 5px;
   }
 
   .home__contact {
     margin-top: 20px;
   }
 
-  .about__majors {
+  .about__container {
+    display: block;
+  }
+
+  .about__description {
+    width: 98%;
+    height: max-content;
+    margin: 10px 1%;
+    padding: 10px;
+  }
+
+  .about__description-end {
+    padding: 10px;
+  }
+
+  .about__avatar {
+    align-items: center;
+    margin: 30px auto;
+    width: 180px;
+    height: 250px;
+  }
+
+  .education {
+    margin: 5px 1%;
+    margin-top: 20px;
+  }
+
+  .school__logo {
+    margin: 0px;
+  }
+
+  .school__description {
+    margin: 0 5px;
+    font-size: var(--font-micro);
+  }
+
+  .school__major {
+    margin: 0 5px;
+  }
+
+  /* .about__majors {
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 0px;
@@ -690,7 +720,7 @@ p {
 
   .major {
     margin-bottom: 30px;
-  }
+  } */
 
   .skillset {
     flex-direction: column;
