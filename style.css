@@ -8,18 +8,19 @@
   --color-light-blue: #80e9fc;
   --color-blue: #456edd;
   --color-dark-blue: #313c52;
-  --color-dark-grey: #4d4d4d;
-  --color-grey: #616161;
-  --color-light-grey: #7c7979;
+  --color-dark-grey: #474747;
   --color-rose: #ac2c53;
-  --color-orange: #ffa32a;
+  --color-orange: #ff9c2a;
   --color-yellow: #ffe449;
   --color-skyblue: #8bb5dd;
   --color-red: #ff836d;
   --color-light-pink: #ffcdc1;
   --color-black: #000000;
   --color-about: #7ad5ff3a;
-  --color-nav: #7fb1d8ab;
+  --color-nav: #417b9494;
+  --color-skill1: #89b8ffec;
+  --color-skill2: #ffffff13;
+  --color-skill3: #ffffff2c;
 
   /* Font size */
   --font-x-large: 55px;
@@ -260,7 +261,7 @@ p {
 .about__avatar {
   margin: 30px 80px;
   width: 250px;
-  height: 340px;
+  height: 100%;
   border: 2px dashed var(--color-bright-blue);
 }
 
@@ -272,7 +273,7 @@ p {
 .about__description {
   margin: auto;
   width: 660px;
-  height: 300px;
+  height: max-content;
   line-height: 200%;
   padding: 20px 30px;
   background-color: var(--color-about);
@@ -364,18 +365,20 @@ p {
 
 .skillset {
   display: flex;
-  background-color: var(--color-light-grey);
-  color: var(--color-light-white);
+  background-color: var(--color-skill1);
+  color: var(--color-white);
   margin: 20px 0;
 }
 
 .skillset__title {
-  color: var(--color-white);
+  margin-bottom: 20px;
+  color: var(--color-black);
+  font-weight: var(--weight-bold);
 }
 
 .skillset__left {
-  flex-basis: 60%;
-  background-color: var(--color-dark-grey);
+  flex-basis: 80%;
+  background-color: var(--color-skill2);
   padding: 20px 40px;
 }
 
@@ -386,17 +389,31 @@ p {
 
 .skill {
   margin-bottom: 25px;
+  font-weight: var(--weight-semi-bold);
 }
 
 .skill__bar {
+  margin-top: 5px;
   width: 100%;
   height: 3px;
-  background-color: var(--color-grey);
+  background-color: var(--color-white);
 }
 
 .skill__value {
+  width: 0;
   height: 3px;
-  background-color: var(--color-orange);
+  background-color: var(--color-red);
+  transition: all 1000ms ease-in;
+}
+
+.language {
+  margin-bottom: 15px;
+  font-weight: var(--weight-semi-bold);
+}
+
+.language__description {
+  display: flex;
+  justify-content: space-between;
 }
 
 .skillset__right {
@@ -404,7 +421,7 @@ p {
 }
 
 .tools {
-  background-color: var(--color-grey);
+  background-color: var(--color-skill3);
 }
 
 .tools,
@@ -622,14 +639,16 @@ p {
   }
 
   #navbar {
+    height: max-content;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
     padding-left: 14px;
-    background-color: var(--color-dark-blue);
+    background-color: var(--color-nav);
   }
 
   .navbar__menu {
+    height: max-content;
     flex-direction: column;
     text-align: center;
     width: 100%;

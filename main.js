@@ -59,6 +59,27 @@ document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+// Skill bar moving
+const about = document.querySelector('#about');
+const aboutHeight = about.getBoundingClientRect().height;
+const skill = document.querySelector('#skills');
+const skillSet = document.querySelector('.skillset');
+const work = document.querySelector('#work');
+const skillValue = document.querySelectorAll('.skill__value');
+const skillHeight = skill.getBoundingClientRect().height;
+const skillsetHeight = skillSet.getBoundingClientRect().height;
+const workHeight = work.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+  if (
+    homeHeight + aboutHeight - 100 > window.scrollY ||
+    window.scrollY > homeHeight + aboutHeight + skillsetHeight + 300
+  ) {
+    skillValue.forEach((v) => (v.style.width = 0));
+  } else {
+    skillValue.forEach((v) => (v.style.width = v.dataset.width));
+  }
+});
+
 // Show "arrow-up" button when scrolling down
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
