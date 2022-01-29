@@ -19,6 +19,7 @@
   --color-light-pink: #ffcdc1;
   --color-black: #000000;
   --color-about: #7ad5ff3a;
+  --color-nav: #7fb1d8ab;
 
   /* Font size */
   --font-x-large: 55px;
@@ -115,6 +116,7 @@ p {
 #navbar {
   position: fixed;
   width: 100%;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   background-color: transparent;
@@ -126,7 +128,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-nav);
 }
 
 .navbar__logo {
@@ -178,7 +180,7 @@ p {
 /* Name hover */
 .shadow {
   color: var(--color-red);
-  text-shadow: 2px 2px var(--color-light-pink);
+  text-shadow: 2.5px 2.5px var(--color-light-pink);
 }
 
 .eName {
@@ -237,6 +239,18 @@ p {
 }
 
 /* About */
+#about {
+  background: linear-gradient(
+    to top left,
+    var(--color-black),
+    var(--color-dark-blue)
+  );
+}
+
+.shadow-blue {
+  color: var(--color-light-blue);
+  text-shadow: 3px 3px var(--color-blue);
+}
 
 .about__container {
   display: flex;
@@ -249,17 +263,18 @@ p {
   height: 340px;
   border: 2px dashed var(--color-bright-blue);
 }
+
 .face {
   width: 100%;
   height: 100%;
 }
 
 .about__description {
-  margin: 20px 100px;
-  width: 570px;
+  margin: auto;
+  width: 660px;
+  height: 300px;
   line-height: 200%;
-  padding: 20px;
-  padding-bottom: 0px;
+  padding: 20px 30px;
   background-color: var(--color-about);
 }
 
@@ -267,8 +282,35 @@ p {
   font-size: var(--font-small);
   color: var(--color-dark-white);
   float: right;
+  padding-right: 20px;
 }
 
+.univ {
+  display: flex;
+  border-top: 1px solid var(--color-bright-blue);
+  padding-top: 10px;
+}
+
+.school__logo {
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.school__major,
+.school__description {
+  margin: 0 15px;
+  text-align: left;
+}
+
+.school__major {
+  font-size: var(--font-small);
+}
+
+.school__description {
+  font-size: var(--font-micro);
+}
 /* 
 .about__majors {
   display: flex;
@@ -309,30 +351,7 @@ p {
 .major__description {
   font-size: var(--font-small);
 }
-
-.school {
-  display: flex;
-  align-items: center;
-}
-
-.school__logo {
-  width: 40px;
-  height: 40px;
-}
-
-.school__description {
-  margin: 0 16px;
-  text-align: left;
-}
-
-.school__name,
-.school__period {
-  font-size: var(--font-small);
-}
-
-.school__period {
-  font-size: var(--font-micro);
-} */
+*/
 
 /* Skill */
 #skills {
