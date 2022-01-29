@@ -63,16 +63,14 @@ document.addEventListener('scroll', () => {
 const about = document.querySelector('#about');
 const aboutHeight = about.getBoundingClientRect().height;
 const skill = document.querySelector('#skills');
-const skillSet = document.querySelector('.skillset');
 const work = document.querySelector('#work');
 const skillValue = document.querySelectorAll('.skill__value');
 const skillHeight = skill.getBoundingClientRect().height;
-const skillsetHeight = skillSet.getBoundingClientRect().height;
 const workHeight = work.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   if (
     homeHeight + aboutHeight - 100 > window.scrollY ||
-    window.scrollY > homeHeight + aboutHeight + skillsetHeight + 300
+    window.scrollY > homeHeight + aboutHeight + skillHeight
   ) {
     skillValue.forEach((v) => (v.style.width = 0));
   } else {
