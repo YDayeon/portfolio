@@ -1,14 +1,5 @@
 'use strict';
 
-// the current position of section
-function getIndexOfSection() {
-  const section = document
-    .elementFromPoint(window.innerWidth / 2, window.innerHeight * (2 / 3))
-    .closest('.section');
-  const idx = sectionIds.indexOf(`#${section.id}`);
-  return idx;
-}
-
 //Make navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
@@ -113,6 +104,14 @@ arrowUp.addEventListener('click', () => {
 // 1. 모든 section 요소들과 메뉴 아이템들을 가지고 온다
 // 2. IntersectionObserver를 이용해서 모든 section들을 관찰한다.
 // 3. 보여지는 section에 해당하는 메뉴 아이템을 활성화 시킨다.
+// the current position of section
+function getIndexOfSection() {
+  const section = document
+    .elementFromPoint(window.innerWidth / 2, window.innerHeight * (2 / 3))
+    .closest('.section');
+  const idx = sectionIds.indexOf(`#${section.id}`);
+  return idx;
+}
 
 const sectionIds = ['#home', '#about', '#skills', '#work', '#contact'];
 const sections = sectionIds.map((id) => document.querySelector(id));
