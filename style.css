@@ -395,7 +395,6 @@ p {
 }
 
 .skill__value {
-  width: 0;
   height: 3px;
   background-color: var(--color-red);
   transition: all 1000ms ease-in;
