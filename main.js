@@ -105,6 +105,12 @@ arrowUp.addEventListener('click', () => {
 // 2. IntersectionObserver를 이용해서 모든 section들을 관찰한다.
 // 3. 보여지는 section에 해당하는 메뉴 아이템을 활성화 시킨다.
 // the current position of section
+const sectionIds = ['#home', '#about', '#skills', '#work', '#contact'];
+const sections = sectionIds.map((id) => document.querySelector(id));
+const navItems = sectionIds.map((id) =>
+  document.querySelector(`[data-link="${id}"]`)
+);
+
 function getIndexOfSection() {
   const section = document
     .elementFromPoint(window.innerWidth / 2, window.innerHeight * (2 / 3))
@@ -112,12 +118,6 @@ function getIndexOfSection() {
   const idx = sectionIds.indexOf(`#${section.id}`);
   return idx;
 }
-
-const sectionIds = ['#home', '#about', '#skills', '#work', '#contact'];
-const sections = sectionIds.map((id) => document.querySelector(id));
-const navItems = sectionIds.map((id) =>
-  document.querySelector(`[data-link="${id}"]`)
-);
 
 let selectedNavIndex = getIndexOfSection();
 let selectedNavItem = navItems[selectedNavIndex];
