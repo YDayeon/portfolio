@@ -1,4 +1,6 @@
 'use strict';
+// Home greeting word moving
+const homeTitle = document.querySelector('.home__title');
 
 //Make navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar');
@@ -111,16 +113,16 @@ const navItems = sectionIds.map((id) =>
   document.querySelector(`[data-link="${id}"]`)
 );
 
-function getIndexOfSection() {
-  const section = document
-    .elementFromPoint(window.innerWidth / 2, window.innerHeight * (2 / 3))
-    .closest('.section');
-  const idx = sectionIds.indexOf(`#${section.id}`);
-  return idx;
-}
+// function getIndexOfSection() {
+//   const section = document
+//     .elementFromPoint(window.innerWidth / 2, window.innerHeight * (2 / 3))
+//     .closest('.section');
+//   const idx = sectionIds.indexOf(`#${section.id}`);
+//   return idx;
+// }
 
-let selectedNavIndex = getIndexOfSection();
-let selectedNavItem = navItems[selectedNavIndex];
+let selectedNavIndex = 0;
+let selectedNavItem = navItems[0];
 function selectNavItem(selected) {
   selectedNavItem.classList.remove('selected');
   selectedNavItem = selected;
@@ -174,6 +176,6 @@ window.addEventListener('wheel', () => {
 });
 
 // F5
-window.addEventListener('load', () => {
-  selectNavItem(navItems[selectedNavIndex]);
-});
+// window.addEventListener('load', () => {
+//   selectNavItem(navItems[selectedNavIndex]);
+// });
