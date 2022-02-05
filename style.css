@@ -179,8 +179,25 @@ p {
   text-shadow: 2.5px 2.5px var(--color-light-pink);
 }
 
-.eName {
-  display: none;
+#eName {
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 0.1vw var(--color-red);
+  text-transform: uppercase;
+}
+
+#eName::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: var(--color-red);
+  /* -webkit-text-stroke: transparent; */
+  border-right: 2px solid var(--color-red);
+  overflow: hidden;
+  animation: animate 6s linear infinite;
 }
 
 .show {
@@ -631,6 +648,18 @@ p {
   right: 30px;
   transition: all var(--animation-duration) ease-in;
   visibility: hidden;
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+    text-shadow: 3px 3px var(--color-light-pink);
+  }
+  70%,
+  90% {
+    width: 100%;
+    text-shadow: 3px 3px var(--color-light-pink);
+  }
 }
 
 /* For below 768px screen width */
