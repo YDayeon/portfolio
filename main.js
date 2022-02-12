@@ -19,7 +19,6 @@ const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
   const target = event.target;
   const link = target.dataset.link;
-  console.log(target);
   if (link === '#skills') {
     skillValue.forEach((v) => (v.style.width = v.dataset.width));
   } else {
