@@ -19,6 +19,12 @@ const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
   const target = event.target;
   const link = target.dataset.link;
+  console.log(target);
+  if (link === '#skills') {
+    skillValue.forEach((v) => (v.style.width = v.dataset.width));
+  } else {
+    skillValue.forEach((v) => (v.style.width = 0));
+  }
   if (link == null) {
     return;
   }
@@ -60,36 +66,6 @@ arrowUp.addEventListener('click', () => {
   scrollIntoView('#home');
 });
 
-// Projects
-// const workBtnContainer = document.querySelector('.work__categories');
-// const projectContainer = document.querySelector('.work__projects');
-// const projects = document.querySelectorAll('.project');
-// workBtnContainer.addEventListener('click', (e) => {
-//   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
-//   if (filter == null) {
-//     return;
-//   }
-
-//   // Remove selection from the previous item and select the new one
-//   const active = document.querySelector('.category__btn.selected');
-//   active.classList.remove('selected');
-//   const target =
-//     e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
-//   target.classList.add('selected');
-
-//   projectContainer.classList.add('anim-out');
-//   setTimeout(() => {
-//     projects.forEach((project) => {
-//       if (filter === '*' || filter === project.dataset.type) {
-//         project.classList.remove('invisible');
-//       } else {
-//         project.classList.add('invisible');
-//       }
-//     });
-//     projectContainer.classList.remove('anim-out');
-//   }, 250);
-// });
-
 // 1. 모든 section 요소들과 메뉴 아이템들을 가지고 온다
 // 2. IntersectionObserver를 이용해서 모든 section들을 관찰한다.
 // 3. 보여지는 section에 해당하는 메뉴 아이템을 활성화 시킨다.
@@ -99,14 +75,6 @@ const sections = sectionIds.map((id) => document.querySelector(id));
 const navItems = sectionIds.map((id) =>
   document.querySelector(`[data-link="${id}"]`)
 );
-
-// function getIndexOfSection() {
-//   const section = document
-//     .elementFromPoint(window.innerWidth / 2, window.innerHeight * (2 / 3))
-//     .closest('.section');
-//   const idx = sectionIds.indexOf(`#${section.id}`);
-//   return idx;
-// }
 
 let selectedNavIndex = 0;
 let selectedNavItem = navItems[0];
@@ -154,15 +122,10 @@ window.addEventListener('wheel', () => {
   ) {
     selectedNavIndex = navItems.length - 1;
   }
-  if (selectedNavIndex === 2) {
+  if (selectedNavIndex > 1 && selectedNavIndex < 3) {
     skillValue.forEach((v) => (v.style.width = v.dataset.width));
   } else {
     skillValue.forEach((v) => (v.style.width = 0));
   }
   selectNavItem(navItems[selectedNavIndex]);
 });
-
-// F5
-// window.addEventListener('load', () => {
-//   selectNavItem(navItems[selectedNavIndex]);
-// });
