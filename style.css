@@ -515,7 +515,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 280px;
+  width: 285px;
   height: 200px;
   margin: 2px;
   background-color: var(--color-light-white);
