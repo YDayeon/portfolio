@@ -11,13 +11,17 @@ NavBar
 Home 
 - 스크롤 범위에 따른 상단 navbar 투명도 조절
 - 텍스트에 CSS animation 추가
+
 About
 - 간략한 자기 소개
+
 Skills
 - 스크롤 위치에 따라 그래프가 동적으로 움직임
+
 Work
 - Mouse hover했을 경우, 각 Project 설명
 - hover창 가운데 클릭 시, 프로젝트 링크로 이동
+
 Contact
 - 내 Gitnub 주소로 이동
 
