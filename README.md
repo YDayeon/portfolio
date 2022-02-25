@@ -7,6 +7,7 @@ Home, About, Skills, Work, Contact
 NavBar
 - 각 section에 따라 selected menu가 달라진다.
 - click한 메뉴에 따라 자동 스크롤
+
 Home 
 - 스크롤 범위에 따른 상단 navbar 투명도 조절
 - 텍스트에 CSS animation 추가
