@@ -18,6 +18,7 @@
   --color-black: #000000;
   --color-about: #7ad5ff3a;
   --color-nav: #add3ff8e;
+  --color-hover: rgba(70, 84, 146, 0.582);
   --color-skill1: #89b8ffec;
   --color-skill2: #ffffff13;
   --color-skill3: #ffffff2c;
@@ -145,7 +146,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-blue);
+  background-color: var(--color-hover);
 }
 
 .navbar__menu__item.selected {
@@ -267,24 +268,21 @@ p {
 
 .about__container {
   display: flex;
-  flex-direction: row;
-}
-
-.about__avatar {
-  margin: 30px 80px;
-  width: 250px;
-  height: 100%;
-  border: 2px dashed var(--color-bright-blue);
 }
 
 .face {
   width: 100%;
+}
+
+.about__avatar {
+  border: 2px dashed var(--color-bright-blue);
+  width: 50%;
   height: 100%;
+  margin: 30px 40px;
 }
 
 .about__description {
-  margin: auto;
-  width: 660px;
+  margin: 40px 40px;
   height: max-content;
   line-height: 200%;
   padding: 20px 30px;
