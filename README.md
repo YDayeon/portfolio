@@ -1,29 +1,23 @@
 # portfolio
- HTML, CSS, JavaScript로 만든 포토폴리오 웹페이지 입니다. (계속해서 업데이트 중입니다.)
- 반응형으로 제작된 웹 페이지입니다. (모바일에서도 확인 가능)
+ The responsive web page using HTML, CSS, JavaScript
+ It looks good on all devices.
 # Contents
 Home, About, Skills, Work, Contact
-## Contents별 주요 기능
+## Main feature of Contents
 NavBar
-- 각 section에 따라 selected menu가 달라진다.
-- click한 메뉴에 따라 자동 스크롤
+- Each section has their own selected menu.
+- Auto-scroll by clicking menu
 
 Home 
-- 스크롤 범위에 따른 상단 navbar 투명도 조절
-- 텍스트에 CSS animation 추가
-
-About
-- 간략한 자기 소개
+- Controlling top navbar transparency based on scroll range
+- Adding CSS animation on text
 
 Skills
-- 스크롤 위치에 따라 그래프가 동적으로 움직임
+- Graphs dynamically move based on scroll position
 
 Work
-- Mouse hover했을 경우, 각 Project 설명
-- hover창 가운데 클릭 시, 프로젝트 링크로 이동
-
-Contact
-- 내 Gitnub 주소로 이동
+- When you over the mouse, the description box appeared
+- When you click the description box, it navigates to the project link
 
 # Link
 https://ydayeon.github.io/portfolio/
